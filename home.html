@@ -13,15 +13,43 @@
 </head>
 <body>
 
-<div class="navbar">
-    <img src="FRI_sk_blue.svg" class="fri-image" alt="FRI">
-    <a href="home.html">Domov</a>
-    <a href="prace.html">Záverečné práce</a>
-    <a href="dokumenty.html">Dokumenty</a>
-</div>
 
-<div>
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
 
-</div>
+        <div>
+            <a class="fri-image-a" href="https://www.fri.uniza.sk/"><img src="FRI.png"  class="fri-image" alt="FRI"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="home.html">Domov</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="dokumenty.html">Dokumenty</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Témy
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="prace.html">Záverečné práce</a></li>
+                        <li><a class="dropdown-item" href="#">Priradená téma</a></li>
+                        <li><a class="dropdown-item" href="#">Informácie o štátnej skúške</a></li>
+                        <li><a class="dropdown-item" href="#">Odovzdávanie súborov</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="login">
+                <i class="bi bi-person-circle"></i>
+                <button type="button" class="btn btn-warning">Prihlásiť sa</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
 </body>
 </html>

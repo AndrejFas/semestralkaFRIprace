@@ -1,33 +1,75 @@
 body {
-    background-color: #2f2f2f;
     margin: 0;
 }
 
 /* farba navbaru */
 .navbar {
-    overflow: hidden;
     background-color: #feb81c;
+
+    vertical-align: middle;
 }
+
 /* text v navbare */
 .navbar a {
+    max-width: fit-content;
     float: left;
     display: block;
-    color: white;
-    text-align: center;
+    color: #0e306d;
+    font-family: "Arial", serif;
+    font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    vertical-align: middle;
 }
-
 
 /* text v navbare pri "hover-ovani" */
 .navbar a:hover {
-    background-color: #eeaa1b;
+    background-color: #feb81c;
     color: white;
+    font-family: "Arial", serif;
+    font-weight: bold;
 }
 
 .fri-image {
-    width: 20%;
-    margin: 10px;
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-left: 100px;
+}
+
+.fri-image-a {
+    width: 300px;
+}
+
+.navbar-linky {
+
+    display: block;
+    margin: 5px;
+}
+
+.login {
+    float: right;
+    margin: 5px;
+    padding-right: 100px;
 
 }
+
+.login i {
+    padding-right: 5px;
+}
+
+.dropdown-menu a:hover{
+    background-color: white;
+    color: #0e306d;
+}
+
+.card-body {
+    background-color: lightgray;
+
+}
+
+.card {
+    margin: 10px;
+}
+
