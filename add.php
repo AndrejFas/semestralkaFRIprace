@@ -1,22 +1,24 @@
 
 <?php
 
-if (isset($_POST['submit'])){
-    if (empty($_POST['nazov'])){
-        echo 'Nazov nebol zadany<br />';
+$errors = array('nazov' => '', 'veduci' => '', 'popis' => '');
+
+    if (isset($_POST['submit'])){
+        if (empty($_POST['nazov'])){
+            $errors['nazov'] = 'Nazov nebol zadany<br />';
+        }
+        if (empty($_POST['veduci'])){
+            $errors['veduci'] = 'Veduci nebol zadany<br />';
+        }
+        if (empty($_POST['popis'])){
+            $errors['popis'] = 'Popis nebol zadany<br />';
+        }
     }
-    if (empty($_POST['veduci'])){
-        echo 'Nazov nebol zadany<br />';
-    }
-    if (empty($_POST['popis'])){
-        echo 'Nazov nebol zadany<br />';
-    }
-}
 
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 
 <?php include('templates/header.php') ?>
 <div class="card-body card mx-auto" style="display: block; width: 50rem">
@@ -28,12 +30,14 @@ if (isset($_POST['submit'])){
                 <label>
                     <input type="text" name="nazov" style="width: 46rem">
                 </label>
+                <div class="errorText"><?php echo $errors['nazov']; ?></div>
             </div>
             <div>
                 <div><label>Veduci</label></div>
                 <label>
                     <input type="text" name="veduci" style="width: 46rem">
                 </label>
+                <div class="errorText"><?php echo $errors['veduci']; ?></div>
             </div>
             <div>
                 <div><label>Tutor</label></div>
@@ -46,6 +50,7 @@ if (isset($_POST['submit'])){
                 <label>
                     <textarea rows="5" name="popis" style="width: 46rem;row"></textarea>
                 </label>
+                <div class="errorText"><?php echo $errors['popis']; ?></div>
             </div>
 
             <label class="text">Katedra</label>

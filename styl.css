@@ -62,5 +62,8 @@ body {
     margin: 10px;
 }
 
+div .errorText {
+    color: red;
+}
 
 
